@@ -5,296 +5,530 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ABC Business Solutions | GTA Small Business Bookkeeper</title>
 <meta name="description" content="Affordable, accurate bookkeeping for small businesses, contractors, restaurants, and trades across the Greater Toronto Area (GTA), Ontario. Free consultation." />
-<meta property="og:type" content="website" />
 <meta property="og:title" content="ABC Business Solutions | GTA Small Business Bookkeeper" />
 <meta property="og:description" content="Affordable, accurate bookkeeping for small businesses across the Greater Toronto Area (GTA), Ontario. Free consultation." />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f3b2e'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='%23f5efe3'%3EA%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>
-  :root{
-    --green:#0f3b2e; --green-soft:#1c5644; --gold:#bf8f42; --red:#9b2226;
-    --paper:#f6f1e7; --cream:#fffdf8; --ink:#1b2320; --muted:#5b6560; --border:#e3dccd;
-    --shadow:0 10px 30px rgba(15,59,46,.08);
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:'Public Sans',system-ui,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.6}
-  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0}
-  a{color:inherit}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-  header{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
-  .logo{height:52px;width:auto;background:var(--paper);border-radius:10px;padding:6px 10px;box-shadow:var(--shadow)}
-  nav a{margin-left:20px;text-decoration:none;font-weight:600;font-size:15px}
-  nav a:hover{color:var(--green-soft)}
-  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:12px 20px;font-weight:700;text-decoration:none;border:1px solid transparent;cursor:pointer;font-size:15px}
-  .btn-primary{background:var(--green);color:#fff}
-  .btn-primary:hover{background:var(--green-soft)}
-  .btn-gold{background:var(--gold);color:#fff}
-  .btn-outline{border-color:var(--border);background:var(--cream);color:var(--ink)}
-  section{padding:56px 0}
-  .paper{background:var(--paper)}
-  .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--gold);margin:0 0 10px}
-  .lede{color:var(--muted);font-size:18px;max-width:60ch}
-  .hero{display:grid;gap:36px;grid-template-columns:1fr}
-  @media(min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center}}
-  .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--border);background:var(--cream);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600}
-  ul.checks{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
-  @media(min-width:640px){ul.checks{grid-template-columns:1fr 1fr}}
-  ul.checks li:before{content:"✓";color:var(--green);font-weight:800;margin-right:8px}
-  .grid{display:grid;gap:16px}
-  .g2{grid-template-columns:1fr}
-  .g3{grid-template-columns:1fr}
-  @media(min-width:700px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
-  .card{background:var(--cream);border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
-  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;padding:0;list-style:none}
-  .tags li{background:var(--cream);border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
-  .price{font-family:'Fraunces',serif;font-size:40px;font-weight:700;color:var(--green)}
-  .price span{font-size:16px;font-weight:600;color:var(--muted);font-family:'Public Sans',sans-serif}
-  label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
-  input,select,textarea{width:100%;font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:var(--cream);color:inherit}
-  input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
-  .field{margin-bottom:16px}
-  .row{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:700px){.row{grid-template-columns:1fr 1fr}}
-  .choices{display:grid;gap:10px;grid-template-columns:1fr}
-  @media(min-width:700px){.choices{grid-template-columns:1fr 1fr}}
-  .choice{display:flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:14px;cursor:pointer}
-  .choice input{width:auto}
-  .inline{display:flex;gap:18px;flex-wrap:wrap}
-  .inline label{display:flex;align-items:center;gap:8px;font-weight:500;margin:0}
-  .hp{position:absolute;left:-9999px;width:0;height:0;opacity:0}
-  .status{margin-top:14px;font-weight:600}
-  .status.ok{color:var(--green)}
-  .status.err{color:var(--red)}
-  footer{background:var(--green);color:#f3efe6;padding:36px 0;margin-top:20px}
-  footer a{color:#f3efe6}
+:root{
+  --green:#0f3b2e; --green-soft:#17513f; --gold:#bf8f42; --red:#9b2226;
+  --paper:#f7f2e8; --cream:#fbf8f2; --card:#ffffff; --ink:#1c2320; --muted:#5c6660;
+  --border:#e3dcce; --shadow-soft:0 2px 10px rgba(15,59,46,.07);
+  --shadow-lift:0 18px 40px -18px rgba(15,59,46,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Public Sans',system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;margin:0}
+h1{font-size:clamp(2.1rem,4.6vw,3.1rem)}
+h2{font-size:clamp(1.6rem,3vw,2.1rem)}
+h3{font-size:1.15rem}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.section{padding:56px 0}
+.paper{background:var(--paper)}
+.eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.muted{color:var(--muted)}
+.center{text-align:center}
+.lead{font-size:1.05rem;color:var(--muted);margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:13px 22px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:.15s}
+.btn-primary{background:var(--green);color:#fdfaf4}
+.btn-primary:hover{background:var(--green-soft)}
+.btn-gold{background:var(--gold);color:#231a08}
+.btn-gold:hover{filter:brightness(1.06)}
+.btn-outline{border-color:var(--border);background:var(--card);color:var(--ink)}
+.btn-outline:hover{border-color:var(--green)}
+.btn-ondark{border-color:rgba(255,255,255,.35);color:#fdfaf4;background:transparent}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--shadow-soft)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(251,248,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 20px;max-width:1140px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-pad{background:var(--paper);border:1px solid var(--border);border-radius:10px;padding:6px;box-shadow:var(--shadow-soft)}
+.logo-pad svg{height:52px;width:auto}
+.brand b{font-family:'Fraunces',Georgia,serif;font-size:1.05rem;display:block}
+.brand small{color:var(--muted);font-size:.72rem}
+nav.main{display:flex;gap:26px}
+nav.main a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.92rem}
+nav.main a:hover{color:var(--ink)}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.hdr-cta .tel{font-weight:700;font-size:.92rem;text-decoration:none}
+.burger{display:none;background:var(--card);border:1px solid var(--border);border-radius:10px;width:42px;height:42px;font-size:1.2rem;cursor:pointer}
+#mobile-nav{display:none;border-top:1px solid var(--border);background:var(--cream);padding:8px 20px 18px}
+#mobile-nav a{display:block;padding:12px 0;border-bottom:1px solid var(--border);text-decoration:none;font-weight:600}
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:48px 0 60px}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--card);border-radius:999px;padding:6px 14px;font-size:.75rem;font-weight:700}
+.ticks{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.92rem;font-weight:500}
+.ticks li:before{content:"✓";color:var(--green);font-weight:800;margin-right:8px}
+.hero img.shot{height:430px;width:100%;object-fit:cover;object-position:top;border-radius:18px;box-shadow:var(--shadow-lift)}
+.hero-badge{position:absolute;left:20px;bottom:-22px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow-soft)}
+.hero-badge img{width:48px;height:48px;border-radius:999px;object-fit:cover}
+/* lists */
+.pillrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.pillrow div{background:var(--paper);border-radius:10px;padding:10px 12px;font-size:.9rem}
+.bench{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;margin-top:20px}
+.bench div{border-bottom:1px solid var(--border);padding:8px 0;font-size:.92rem}
+.dark{background:var(--green);color:#f3efe6}
+.dark .eyebrow{color:rgba(243,239,230,.6)}
+.dark .box{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);border-radius:14px;padding:16px;font-size:.92rem}
+/* pricing */
+.price{font-size:2.4rem;font-weight:800;font-family:'Public Sans',sans-serif;letter-spacing:-.02em}
+.price span{font-size:.9rem;font-weight:600;color:var(--muted);margin-left:6px}
+.plan ul{list-style:none;padding:0;margin:18px 0 0;font-size:.9rem;color:var(--muted)}
+.plan li{border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:8px}
+/* form */
+label{font-weight:600;font-size:.88rem;display:block;margin-bottom:6px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;border:1px solid var(--border);border-radius:10px;padding:11px 12px;font:inherit;background:var(--card);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
+.field{margin-bottom:16px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.9rem}
+.checks label,.radios label{font-weight:500;display:flex;gap:8px;align-items:center;margin:0}
+.radios{display:flex;gap:18px}
+.hp{position:absolute;left:-9999px}
+#form-status{margin-top:14px;font-weight:600}
+/* footer */
+footer.site{background:var(--green);color:#eae5da;margin-top:8px}
+footer.site .wrap{padding-top:52px;padding-bottom:34px}
+footer.site a{text-decoration:none;color:rgba(234,229,218,.85)}
+footer.site ul{list-style:none;padding:0;margin:14px 0 0;font-size:.92rem;display:grid;gap:10px}
+.fbot{margin-top:40px;border-top:1px solid rgba(255,255,255,.16);padding-top:18px;font-size:.78rem;color:rgba(234,229,218,.6);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:32px}
+  .g3,.g4,.g2,.two{grid-template-columns:1fr!important}
+  nav.main,.hdr-cta{display:none}
+  .burger{display:block}
+  .checks,.ticks,.bench,.pillrow{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap bar">
-    <a href="#top" aria-label="ABC Business Solutions home">
-      <svg class="logo" viewBox="0 0 1000 700" role="img" aria-label="ABC Business Solutions logo" xmlns="http://www.w3.org/2000/svg">
-        <g font-family="Fraunces, Georgia, serif" font-weight="700" font-size="280" text-anchor="middle">
-          <text x="130" y="220" fill="#0f3b2e">A</text>
-          <text x="130" y="460" fill="#bf8f42">B</text>
-          <text x="130" y="680" fill="#0f3b2e">C</text>
-        </g>
-        <g transform="translate(96 540) scale(0.2)">
-          <path fill="#9b2226" d="M256 20 l-38 71c-4 8-12 7-20 3l-28-14 21 111c4 21-10 21-18 12l-48-54-8 27c-1 4-6 8-13 7l-61-13 16 58c3 13 6 18-4 21l-22 10 106 86c4 3 6 9 5 15l-9 30 100-12c3 0 8 1 8 5l-3 113h30l-2-113c0-4 5-5 8-5l100 12-9-30c-1-6 1-12 5-15l106-86-22-10c-10-3-7-8-4-21l16-58-61 13c-7 1-12-3-13-7l-8-27-48 54c-8 9-22 9-18-12l21-111-28 14c-8 4-16 5-20-3z"/>
-        </g>
-        <rect x="308" y="40" width="5" height="625" rx="2.5" fill="#0f3b2e"/>
-        <g font-family="Public Sans, sans-serif" font-weight="600" font-size="74" letter-spacing="3">
-          <text x="378" y="200" fill="#0f3b2e">ACCOUNTING</text>
-          <text x="378" y="425" fill="#bf8f42">BOOKKEEPING</text>
-          <text x="378" y="645" fill="#0f3b2e">CRA</text>
-        </g>
-      </svg>
+<header class="site">
+  <div class="hdr">
+    <a class="brand" href="#top">
+      <span class="logo-pad">
+        <!-- ABC vector lockup -->
+        <svg viewBox="0 0 1000 700" role="img" aria-label="ABC Business Solutions logo" xmlns="http://www.w3.org/2000/svg">
+          <g font-family="Fraunces, Georgia, serif" font-weight="700" font-size="280" text-anchor="middle">
+            <text x="130" y="220" fill="#0f3b2e">A</text>
+            <text x="130" y="460" fill="#bf8f42">B</text>
+            <text x="130" y="680" fill="#0f3b2e">C</text>
+          </g>
+          <g transform="translate(96 540) scale(0.2)">
+            <path fill="#9b2226" d="M256 20 l-38 71c-4 8-12 7-20 3l-28-14 21 111c4 21-10 21-18 12l-48-54-8 27c-1 4-6 8-13 7l-61-13 16 58c3 13 6 18-4 21l-22 10 106 86c4 3 6 9 5 15l-9 30 100-12c3 0 8 1 8 5l-3 113h30l-2-113c0-4 5-5 8-5l100 12-9-30c-1-6 1-12 5-15l106-86-22-10c-10-3-7-8-4-21l16-58-61 13c-7 1-12-3-13-7l-8-27-48 54c-8 9-22 9-18-12l21-111-28 14c-8 4-16 5-20-3z"/>
+          </g>
+          <rect x="308" y="40" width="5" height="625" rx="2.5" fill="#0f3b2e"/>
+          <g font-family="'Public Sans', system-ui, sans-serif" font-weight="600" font-size="74" letter-spacing="3">
+            <text x="378" y="200" fill="#0f3b2e">ACCOUNTING</text>
+            <text x="378" y="425" fill="#bf8f42">BOOKKEEPING</text>
+            <text x="378" y="645" fill="#0f3b2e">CRA</text>
+          </g>
+        </svg>
+      </span>
+      <span><b>ABC Business Solutions</b><small>Greater Toronto Area, ON</small></span>
     </a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="tel:+16474472782">647-447-2782</a>
+    <nav class="main">
+      <a href="#top">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
     </nav>
+    <div class="hdr-cta">
+      <a class="tel" href="tel:+16474472782">647-447-2782</a>
+      <a class="btn btn-primary" href="#contact">Free Consultation</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu">☰</button>
+  </div>
+  <div id="mobile-nav">
+    <a href="#top">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="btn btn-primary" style="margin-top:14px" href="#contact">Request a Free Consultation</a>
+    <a class="btn btn-outline" style="margin-top:8px" href="tel:+16474472782">Call 647-447-2782</a>
   </div>
 </header>
 
 <main id="top">
-  <section class="paper">
-    <div class="wrap hero">
-      <div>
-        <span class="pill">★ Locally owned · Proudly Serving the Greater Toronto Area (GTA), Ontario</span>
-        <h1 style="font-size:44px;margin-top:18px">Bookkeeping that's accurate, affordable, and actually personal.</h1>
-        <p class="lede" style="margin-top:14px">We keep the books for local small businesses, contractors, restaurants, and trades — so you can get back to running your business.</p>
-        <ul class="checks">
-          <li>Free, no-pressure consultation</li>
-          <li>Flat monthly pricing</li>
-          <li>The same bookkeeper every month</li>
-          <li>Ready-for-tax-season records</li>
-        </ul>
-        <p style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="#contact">Request a Free Consultation</a>
-          <a class="btn btn-outline" href="tel:+16474472782">Call 647-447-2782</a>
-        </p>
+
+<!-- HERO -->
+<section class="paper">
+  <div class="wrap hero">
+    <div>
+      <span class="pill">★ Locally owned · Proudly Serving the Greater Toronto Area (GTA), Ontario</span>
+      <h1 style="margin-top:18px">Bookkeeping that's accurate, affordable, and actually personal.</h1>
+      <p class="lead">We keep the books for local small businesses, contractors, restaurants, and trades — so you can get back to running your business.</p>
+      <ul class="ticks">
+        <li>Free, no-pressure consultation</li>
+        <li>Flat monthly pricing</li>
+        <li>The same bookkeeper every month</li>
+        <li>Ready-for-tax-season records</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-primary" href="#contact">Request a Free Consultation</a>
+        <a class="btn btn-outline" href="tel:+16474472782">Call 647-447-2782</a>
       </div>
+    </div>
+    <div style="position:relative">
+      <img class="shot" src="images/hero-bookkeeper.jpg" alt="Local bookkeeper working at a sunlit desk with a laptop and ledger" />
+      <div class="hero-badge">
+        <img src="images/owner-headshot.jpg" alt="Badar Syed" />
+        <div><strong style="font-size:.9rem">Badar Syed</strong><br /><span class="muted" style="font-size:.78rem">Owner &amp; Bookkeeper</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE + INDUSTRIES -->
+<section class="section">
+  <div class="wrap grid g2 two" style="gap:40px;align-items:center">
+    <div>
+      <p class="eyebrow">Why hire a bookkeeper?</p>
+      <h2 style="margin-top:8px">You didn't start your business to spend nights on receipts.</h2>
+      <p class="lead">Most owners lose 5–10 hours a week sorting transactions and second-guessing entries. A professional bookkeeper takes that off your plate entirely — your records stay accurate, your CPA gets what they need, and you see your numbers clearly without doing the work.</p>
+      <div class="bench">
+        <div>Save valuable time</div>
+        <div>Stay organized year-round</div>
+        <div>Understand your finances</div>
+        <div>Reduce bookkeeping errors</div>
+        <div>Easier tax season</div>
+        <div>Make informed decisions</div>
+        <div>More time to grow</div>
+      </div>
+    </div>
+    <div class="card">
+      <p class="eyebrow">Industries we serve</p>
+      <h3 style="margin-top:6px;font-size:1.5rem">Built around your line of work</h3>
+      <div class="pillrow">
+        <div>Small businesses</div><div>Contractors</div>
+        <div>Restaurants &amp; cafés</div><div>Retail stores</div>
+        <div>Trades</div><div>Real estate agents</div>
+        <div>Consultants</div><div>Freelancers</div>
+        <div>Medical &amp; dental</div><div>Startups</div>
+      </div>
+      <p class="muted" style="margin-top:14px;font-size:.9rem">Don't see yours? <a href="#contact"><strong>Tell us about your business</strong></a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONALIZED -->
+<section class="dark section">
+  <div class="wrap grid g2 two" style="gap:36px;align-items:center">
+    <div>
+      <p class="eyebrow">Personalized service</p>
+      <h2 style="margin-top:8px">A real person who knows your business</h2>
+      <p style="margin-top:12px;color:rgba(243,239,230,.82)">We keep our client list intentionally small, so services are customized to your size — a solo freelancer and a ten-truck HVAC company shouldn't get the same package.</p>
+      <div class="btns">
+        <a class="btn btn-gold" href="#contact">Get Your Books Organized</a>
+        <a class="btn btn-ondark" href="tel:+16474472782">Call 647-447-2782</a>
+      </div>
+    </div>
+    <div class="grid g2">
+      <div class="box"><strong>Friendly one-on-one support</strong><br />The same person every month — someone who knows your business by name.</div>
+      <div class="box"><strong>Clear communication</strong><br />Plain-language answers, and a reply within one business day.</div>
+      <div class="box"><strong>Flexible solutions</strong><br />Weekly, monthly, quarterly, or catch-up cleanup — customized to your size.</div>
+      <div class="box"><strong>Long-term relationships</strong><br />Most clients stay with us for years. We grow with you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section paper" id="services">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto">
+      <p class="eyebrow">Services</p>
+      <h2 style="margin-top:8px">Everything your books need — nothing you don't</h2>
+      <p class="lead">We build a service package around your business size and industry, then quote a flat monthly rate so there are no surprise invoices.</p>
+    </div>
+    <div class="grid g3" style="margin-top:36px">
+      <div class="card"><h3>Monthly bookkeeping</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Transactions categorized, accounts reconciled, and books closed on a predictable schedule.</p></div>
+      <div class="card"><h3>Financial reporting</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Profit &amp; loss, balance sheet, and cash flow — explained in plain English each month.</p></div>
+      <div class="card"><h3>Catch-up &amp; cleanup</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Months or years behind? We'll bring everything current and reconcile it properly.</p></div>
+      <div class="card"><h3>Invoicing &amp; A/R, A/P</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Send invoices, track who owes you, and keep vendor bills paid on time.</p></div>
+      <div class="card"><h3>Payroll support</h3><p class="muted" style="margin-top:8px;font-size:.92rem">Coordinate payroll runs and keep wages, taxes, and contractor payments recorded correctly.</p></div>
+      <div class="card"><h3>Tax-season prep</h3><p class="muted" style="margin-top:8px;font-size:.92rem">A clean, organized year-end package handed straight to your CPA or tax preparer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto">
+      <p class="eyebrow">Service levels</p>
+      <h2 style="margin-top:8px">Customized to the size of your business</h2>
+      <p class="lead">A starting point, not a rigid menu. Final pricing is set after your free consultation.</p>
+    </div>
+    <div class="grid g3" style="margin-top:36px">
+      <div class="card plan">
+        <p class="eyebrow">Freelancers &amp; solo owners</p>
+        <h3 style="margin-top:6px;font-size:1.5rem">Essential</h3>
+        <p class="price" style="margin-top:10px">$250<span>/ month</span></p>
+        <ul><li>Up to 2 accounts reconciled</li><li>Monthly P&amp;L</li><li>Email support</li></ul>
+        <a class="btn btn-outline" style="margin-top:20px;width:100%" href="#contact">Get a quote</a>
+      </div>
+      <div class="card plan">
+        <p class="eyebrow">Contractors, shops &amp; cafés</p>
+        <h3 style="margin-top:6px;font-size:1.5rem">Growing</h3>
+        <p class="price" style="margin-top:10px">$500<span>/ month</span></p>
+        <ul><li>Up to 5 accounts</li><li>Full monthly reports</li><li>Invoicing &amp; bill tracking</li><li>Quarterly review call</li></ul>
+        <a class="btn btn-outline" style="margin-top:20px;width:100%" href="#contact">Get a quote</a>
+      </div>
+      <div class="card plan">
+        <p class="eyebrow">Multi-employee businesses</p>
+        <h3 style="margin-top:6px;font-size:1.5rem">Established</h3>
+        <p class="price" style="margin-top:10px">$2,000<span>/ month</span></p>
+        <ul><li>Unlimited accounts</li><li>Payroll coordination</li><li>Job or location costing</li><li>Monthly review call</li></ul>
+        <a class="btn btn-outline" style="margin-top:20px;width:100%" href="#contact">Get a quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT + TRUST -->
+<section class="section paper" id="about">
+  <div class="wrap">
+    <div class="center" style="max-width:720px;margin:0 auto">
+      <p class="eyebrow">About us</p>
+      <h2 style="margin-top:8px">A small bookkeeping practice, on purpose</h2>
+      <p class="lead">ABC Business Solutions is locally owned and works with businesses right across the Greater Toronto Area (GTA), Ontario. We're not a national firm with call centers — we're the person who picks up the phone and already knows your business.</p>
+      <p class="lead">For more than 12 years we've kept the books for contractors, restaurants, retail shops, trades, medical offices, and freelancers. The work is the same every month: accurate entries, reconciled accounts, and reports you can actually use.</p>
+    </div>
+
+    <div class="grid g2 two" style="margin-top:44px;gap:22px">
       <div class="card">
-        <p class="eyebrow">Industries we serve</p>
-        <ul class="tags" style="margin-top:6px">
-          <li>Small businesses</li><li>Contractors</li><li>Restaurants &amp; cafés</li>
-          <li>Retail stores</li><li>Trades</li><li>Real estate agents</li>
-          <li>Consultants</li><li>Freelancers</li><li>Medical &amp; dental</li><li>Startups</li>
-        </ul>
+        <img src="images/owner-headshot.jpg" alt="Badar Syed, owner of ABC Business Solutions" style="border-radius:12px;aspect-ratio:4/5;object-fit:cover;width:100%" />
+        <h3 style="margin-top:20px;font-size:1.5rem">Badar Syed</h3>
+        <p class="muted">Owner &amp; Bookkeeper</p>
+        <p class="muted" style="margin-top:14px;font-size:.92rem">Badar Syed is dedicated to helping small businesses maintain accurate financial records through reliable, personalized bookkeeping services. His focus is on providing organized bookkeeping, clear financial reporting, and dependable support so business owners can spend more time growing their businesses.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="wrap">
-      <p class="eyebrow">Services &amp; pricing</p>
-      <h2 style="font-size:32px">Flat monthly plans, no surprises</h2>
-      <div class="grid g3" style="margin-top:26px">
+      <div class="grid g2" style="align-content:start">
         <div class="card">
-          <h3 style="font-size:20px">Essential</h3>
-          <p class="price" style="margin:10px 0">$250 <span>/month</span></p>
-          <p style="color:var(--muted);margin:0">Monthly bookkeeping, bank &amp; credit card reconciliation, and clean year-end records.</p>
+          <p class="eyebrow">Years in business</p>
+          <p style="font-family:'Fraunces',serif;font-size:3rem;color:var(--green);font-weight:700;margin-top:6px">12</p>
+          <p class="muted" style="font-size:.88rem">Years keeping small business books accurate and current.</p>
         </div>
         <div class="card">
-          <h3 style="font-size:20px">Growing</h3>
-          <p class="price" style="margin:10px 0">$500 <span>/month</span></p>
-          <p style="color:var(--muted);margin:0">Everything in Essential plus invoicing, bill pay, and monthly financial reporting.</p>
+          <p class="eyebrow">Quick contact</p>
+          <p style="margin-top:10px;font-size:.92rem"><a href="tel:+16474472782">Phone: 647-447-2782</a></p>
+          <p style="margin-top:8px;font-size:.92rem;word-break:break-all"><a href="mailto:Syedbadar@hotmail.com">Email: Syedbadar@hotmail.com</a></p>
+          <p class="muted" style="margin-top:8px;font-size:.92rem">Area: Greater Toronto Area (GTA), Ontario</p>
         </div>
         <div class="card">
-          <h3 style="font-size:20px">Established</h3>
-          <p class="price" style="margin:10px 0">$2,000 <span>/month</span></p>
-          <p style="color:var(--muted);margin:0">Full-service bookkeeping with payroll support, CRA filings, and advisory check-ins.</p>
+          <p class="eyebrow">Business hours</p>
+          <p style="margin-top:10px;font-size:.92rem">Hours: Mon–Fri, 9am–5pm</p>
+          <p class="muted" style="font-size:.9rem;margin-top:6px">Evening and weekend appointments available by request.</p>
+          <p class="muted" style="font-size:.9rem;margin-top:6px">Replies within one business day.</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Why choose us</p>
+          <ul style="margin:10px 0 0;padding-left:18px;font-size:.9rem;color:var(--muted)">
+            <li>One dedicated bookkeeper, every month</li>
+            <li>Flat, predictable pricing</li>
+            <li>CRA-ready records and filings</li>
+            <li>Plain-language answers, no jargon</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="paper" id="about">
-    <div class="wrap grid g2">
-      <div>
-        <p class="eyebrow">Why hire a bookkeeper?</p>
-        <h2 style="font-size:30px">Save time, stay organized, and know your numbers</h2>
-        <ul class="checks" style="grid-template-columns:1fr">
-          <li>Save valuable time</li>
-          <li>Stay organized year-round</li>
-          <li>Understand your finances</li>
-          <li>Reduce bookkeeping errors</li>
-          <li>Easier tax season</li>
-          <li>More time to grow your business</li>
-        </ul>
-      </div>
-      <div class="card">
-        <p class="eyebrow">Personalized service</p>
-        <h3 style="font-size:22px">Badar Syed — Owner &amp; Bookkeeper</h3>
-        <p style="color:var(--muted)">Badar Syed is dedicated to helping small businesses stay organized, compliant, and confident about their numbers — with friendly one-on-one support, clear communication, and flexible service tailored to your business.</p>
-        <p style="margin:0"><strong>Hours:</strong> Mon–Fri, 9am–5pm</p>
-        <p style="margin:6px 0 0"><strong>Phone:</strong> <a href="tel:+16474472782">647-447-2782</a></p>
-        <p style="margin:6px 0 0"><strong>Email:</strong> <a href="mailto:Syedbadar@hotmail.com">Syedbadar@hotmail.com</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="center" style="max-width:680px;margin:0 auto">
       <p class="eyebrow">Contact</p>
-      <h2 style="font-size:32px">Request a free consultation</h2>
-      <p class="lede">Tell us a bit about your business and we'll follow up within one business day — usually sooner.</p>
+      <h2 style="margin-top:8px">Request your free consultation</h2>
+      <p class="lead">Tell us a little about your business and we'll get back to you within one business day.</p>
+    </div>
 
-      <form id="consult" class="card" style="margin-top:24px" action="https://formspree.io/f/xqpzdbdb" method="POST" novalidate>
+    <div class="grid two" style="grid-template-columns:1.35fr .65fr;margin-top:36px;gap:22px">
+      <form class="card" id="consult-form" action="https://formspree.io/f/xqpzdbdb" method="POST">
         <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="row">
-          <div class="field"><label for="name">Name</label><input id="name" name="Name" maxlength="100" required autocomplete="name" /></div>
-          <div class="field"><label for="business">Business name <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="business" name="Business name" maxlength="120" autocomplete="organization" /></div>
+        <div class="grid g2">
+          <div class="field"><label for="name">Your name</label><input id="name" name="Name" type="text" required /></div>
+          <div class="field"><label for="business">Business name <span class="muted">(optional)</span></label><input id="business" name="Business Name" type="text" /></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="Phone" type="tel" required /></div>
         </div>
-        <div class="row">
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" maxlength="255" required autocomplete="email" /></div>
-          <div class="field"><label for="phone">Phone number</label><input id="phone" name="Phone" type="tel" maxlength="30" required autocomplete="tel" /></div>
-        </div>
-        <div class="row">
-          <div class="field">
-            <label>Preferred contact method</label>
-            <div class="inline">
-              <label><input type="radio" name="Preferred contact" value="Phone" checked /> Phone</label>
-              <label><input type="radio" name="Preferred contact" value="Email" /> Email</label>
-              <label><input type="radio" name="Preferred contact" value="Text" /> Text</label>
-            </div>
+
+        <div class="field">
+          <label>Preferred contact method</label>
+          <div class="radios">
+            <label><input type="radio" name="Preferred Contact" value="Phone" checked /> Phone</label>
+            <label><input type="radio" name="Preferred Contact" value="Email" /> Email</label>
+            <label><input type="radio" name="Preferred Contact" value="Text" /> Text</label>
           </div>
+        </div>
+
+        <div class="grid g2">
           <div class="field">
             <label for="type">Type of business</label>
-            <select id="type" name="Business type" required>
-              <option value="" disabled selected>Select one…</option>
+            <select id="type" name="Business Type" required>
+              <option value="">Choose one…</option>
               <option>Small business</option><option>Contractor</option><option>Restaurant or café</option>
               <option>Retail store</option><option>Trades (electrical, plumbing, HVAC)</option>
               <option>Real estate agent</option><option>Consultant</option><option>Freelancer</option>
               <option>Medical or dental office</option><option>Startup</option><option>Other</option>
             </select>
           </div>
-        </div>
-        <div class="row">
-          <div class="field"><label for="employees">Number of employees <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="employees" name="Employees" inputmode="numeric" maxlength="20" /></div>
-          <div class="field"><label for="software">Current bookkeeping software <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="software" name="Current software" maxlength="80" placeholder="e.g. QuickBooks, Xero, spreadsheets" /></div>
-        </div>
-        <div class="field">
-          <label>Services needed</label>
-          <div class="choices">
-            <label class="choice"><input type="checkbox" name="Services" value="Monthly bookkeeping" /> Monthly bookkeeping</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Catch-up / cleanup" /> Catch-up / cleanup</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Financial reporting" /> Financial reporting</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Invoicing & accounts receivable" /> Invoicing &amp; accounts receivable</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Bill pay & accounts payable" /> Bill pay &amp; accounts payable</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Payroll support" /> Payroll support</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Tax-season preparation" /> Tax-season preparation</label>
-            <label class="choice"><input type="checkbox" name="Services" value="Not sure yet" /> Not sure yet</label>
+          <div class="field">
+            <label for="employees">Number of employees <span class="muted">(optional)</span></label>
+            <select id="employees" name="Employees">
+              <option value="">Choose one…</option>
+              <option>Just me</option><option>2–5</option><option>6–10</option><option>11–25</option><option>26+</option>
+            </select>
           </div>
         </div>
-        <div class="field"><label for="notes">Additional notes <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="notes" name="Notes" rows="5" maxlength="1000" placeholder="How far behind are your books? Anything specific you'd like help with?"></textarea></div>
-        <input type="hidden" name="_subject" value="New consultation request — ABC Business Solutions" />
-        <button class="btn btn-primary" style="width:100%;justify-content:center" type="submit" id="submitBtn">Request My Free Consultation</button>
-        <p class="status" id="status" role="status" aria-live="polite"></p>
-        <p style="text-align:center;font-size:12px;color:var(--muted);margin:10px 0 0">Your information is only used to contact you about bookkeeping services.</p>
+
+        <div class="field">
+          <label for="software">Current accounting software <span class="muted">(optional)</span></label>
+          <input id="software" name="Current Software" type="text" placeholder="QuickBooks, Xero, Wave, spreadsheets, none…" />
+        </div>
+
+        <div class="field">
+          <label>Services needed</label>
+          <div class="checks">
+            <label><input type="checkbox" name="Services" value="Monthly bookkeeping" /> Monthly bookkeeping</label>
+            <label><input type="checkbox" name="Services" value="Catch-up / cleanup" /> Catch-up / cleanup</label>
+            <label><input type="checkbox" name="Services" value="Financial reporting" /> Financial reporting</label>
+            <label><input type="checkbox" name="Services" value="Invoicing & accounts receivable" /> Invoicing &amp; A/R</label>
+            <label><input type="checkbox" name="Services" value="Bill pay & accounts payable" /> Bill pay &amp; A/P</label>
+            <label><input type="checkbox" name="Services" value="Payroll support" /> Payroll support</label>
+            <label><input type="checkbox" name="Services" value="Tax-season preparation" /> Tax-season preparation</label>
+            <label><input type="checkbox" name="Services" value="Not sure yet" /> Not sure yet</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="notes">Anything else? <span class="muted">(optional)</span></label>
+          <textarea id="notes" name="Notes" rows="4" placeholder="How far behind are your books? Any deadlines coming up?"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit" id="submit-btn">Send my request</button>
+        <p id="form-status"></p>
+        <p class="muted" style="font-size:.8rem;margin-top:10px">We only use your details to reply about bookkeeping services.</p>
       </form>
+
+      <div class="grid" style="align-content:start">
+        <div class="card">
+          <p class="eyebrow">Talk to us directly</p>
+          <p style="margin-top:12px"><a href="tel:+16474472782"><strong>Phone: 647-447-2782</strong></a></p>
+          <p style="margin-top:8px;word-break:break-all"><a href="mailto:Syedbadar@hotmail.com">Email: Syedbadar@hotmail.com</a></p>
+          <p class="muted" style="margin-top:8px">Hours: Mon–Fri, 9am–5pm</p>
+          <p class="muted" style="margin-top:8px">Area: Greater Toronto Area (GTA), Ontario</p>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <iframe title="Service area map — Greater Toronto Area" src="https://www.google.com/maps?q=Greater+Toronto+Area,+Ontario&output=embed" width="100%" height="260" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Service area</p>
+          <p class="muted" style="margin-top:10px;font-size:.9rem">Proudly serving businesses throughout the Greater Toronto Area (GTA), including Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Burlington, Pickering, Ajax, Whitby, Oshawa, Milton, and surrounding communities.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="card center" style="padding:40px;box-shadow:var(--shadow-lift)">
+      <h2>Let's simplify your finances</h2>
+      <p class="lead" style="max-width:520px;margin:12px auto 0">One short call and we'll tell you exactly what it takes to get your books current — free, with no obligation.</p>
+      <div class="btns" style="justify-content:center">
+        <a class="btn btn-primary" href="#contact">Request a Free Consultation</a>
+        <a class="btn btn-outline" href="tel:+16474472782">Call Today: 647-447-2782</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer>
+<footer class="site">
   <div class="wrap">
-    <p style="font-family:'Fraunces',serif;font-size:22px;margin:0">ABC Business Solutions</p>
-    <p style="margin:8px 0 0">Accounting · Bookkeeping · CRA — Proudly serving the Greater Toronto Area (GTA), Ontario</p>
-    <p style="margin:8px 0 0"><a href="tel:+16474472782">647-447-2782</a> · <a href="mailto:Syedbadar@hotmail.com">Syedbadar@hotmail.com</a> · Mon–Fri, 9am–5pm</p>
-    <p style="margin:14px 0 0;font-size:13px;opacity:.8">© <span id="yr"></span> ABC Business Solutions. All rights reserved.</p>
+    <div class="grid g3 two">
+      <div>
+        <span class="logo-pad" style="display:inline-block;background:#fbf8f2">
+          <svg viewBox="0 0 1000 700" style="height:74px;width:auto" aria-label="ABC Business Solutions logo" xmlns="http://www.w3.org/2000/svg">
+            <g font-family="Fraunces, Georgia, serif" font-weight="700" font-size="280" text-anchor="middle">
+              <text x="130" y="220" fill="#0f3b2e">A</text><text x="130" y="460" fill="#bf8f42">B</text><text x="130" y="680" fill="#0f3b2e">C</text>
+            </g>
+            <g transform="translate(96 540) scale(0.2)"><path fill="#9b2226" d="M256 20 l-38 71c-4 8-12 7-20 3l-28-14 21 111c4 21-10 21-18 12l-48-54-8 27c-1 4-6 8-13 7l-61-13 16 58c3 13 6 18-4 21l-22 10 106 86c4 3 6 9 5 15l-9 30 100-12c3 0 8 1 8 5l-3 113h30l-2-113c0-4 5-5 8-5l100 12-9-30c-1-6 1-12 5-15l106-86-22-10c-10-3-7-8-4-21l16-58-61 13c-7 1-12-3-13-7l-8-27-48 54c-8 9-22 9-18-12l21-111-28 14c-8 4-16 5-20-3z"/></g>
+            <rect x="308" y="40" width="5" height="625" rx="2.5" fill="#0f3b2e"/>
+            <g font-family="'Public Sans', system-ui, sans-serif" font-weight="600" font-size="74" letter-spacing="3">
+              <text x="378" y="200" fill="#0f3b2e">ACCOUNTING</text><text x="378" y="425" fill="#bf8f42">BOOKKEEPING</text><text x="378" y="645" fill="#0f3b2e">CRA</text>
+            </g>
+          </svg>
+        </span>
+        <p style="margin-top:16px;font-size:.9rem;color:rgba(234,229,218,.75);max-width:280px">Friendly, accurate bookkeeping for local small businesses</p>
+      </div>
+      <div>
+        <p class="eyebrow">Pages</p>
+        <ul><li><a href="#top">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <p class="eyebrow">Contact</p>
+        <ul>
+          <li><a href="tel:+16474472782">Phone: 647-447-2782</a></li>
+          <li><a href="mailto:Syedbadar@hotmail.com">Email: Syedbadar@hotmail.com</a></li>
+          <li>Area: Greater Toronto Area (GTA), Ontario</li>
+          <li>Hours: Mon–Fri, 9am–5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <p>© <span id="yr"></span> ABC Business Solutions. All rights reserved.</p>
+      <p>Proudly Serving the Greater Toronto Area (GTA), Ontario</p>
+    </div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  var form = document.getElementById('consult');
-  var status = document.getElementById('status');
-  var btn = document.getElementById('submitBtn');
+document.getElementById('yr').textContent = new Date().getFullYear();
+var burger = document.getElementById('burger'), mnav = document.getElementById('mobile-nav');
+burger.addEventListener('click', function(){ mnav.style.display = mnav.style.display === 'block' ? 'none' : 'block'; });
+mnav.addEventListener('click', function(e){ if (e.target.tagName === 'A') mnav.style.display = 'none'; });
 
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-    status.className = 'status';
-    status.textContent = '';
+var form = document.getElementById('consult-form'),
+    status = document.getElementById('form-status'),
+    btn = document.getElementById('submit-btn');
 
-    var name = form.elements['Name'].value.trim();
-    var email = form.elements['email'].value.trim();
-    var phone = form.elements['Phone'].value.trim();
-    var type = form.elements['Business type'].value;
-    var services = Array.from(form.querySelectorAll('input[name="Services"]:checked')).map(function (i) { return i.value; });
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+  var services = Array.from(form.querySelectorAll('input[name="Services"]:checked')).map(function(i){return i.value;});
+  if (services.length === 0) { status.style.color = '#9b2226'; status.textContent = 'Please select at least one service.'; return; }
 
-    if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || phone.length < 7 || !type || services.length === 0) {
-      status.className = 'status err';
-      status.textContent = 'Please fill in your name, a valid email, a phone number, your business type, and at least one service.';
-      return;
-    }
+  var data = new FormData(form);
+  data.delete('Services');
+  data.append('Services', services.join(', '));
+  data.append('_subject', 'New consultation request — ABC Business Solutions');
 
-    btn.disabled = true;
-    btn.textContent = 'Sending…';
-    try {
-      var data = new FormData(form);
-      data.delete('Services');
-      data.append('Services', services.join(', '));
-      var res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
-      if (!res.ok) throw new Error('failed');
+  btn.disabled = true; btn.textContent = 'Sending…';
+  status.style.color = 'inherit'; status.textContent = '';
+  try {
+    var res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+    if (res.ok) {
       form.reset();
-      status.className = 'status ok';
-      status.textContent = "Thanks! We'll be in touch within one business day.";
-    } catch (err) {
-      status.className = 'status err';
-      status.textContent = 'Something went wrong. Please call 647-447-2782.';
-    } finally {
-      btn.disabled = false;
-      btn.textContent = 'Request My Free Consultation';
+      status.style.color = '#0f3b2e';
+      status.textContent = "Thank you! Your request has been sent — we'll reply within one business day.";
+    } else {
+      throw new Error('Bad response');
     }
-  });
+  } catch (err) {
+    status.style.color = '#9b2226';
+    status.innerHTML = 'Something went wrong. Please call <a href="tel:+16474472782">647-447-2782</a> or email <a href="mailto:Syedbadar@hotmail.com">Syedbadar@hotmail.com</a>.';
+  } finally {
+    btn.disabled = false; btn.textContent = 'Send my request';
+  }
+});
 </script>
 </body>
 </html>
